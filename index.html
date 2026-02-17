@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" type="image/png" href="tiny.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header-container">
+    <img src="PNG Logo.png" alt="Logo" class="logo-big" />
+    <nav class="menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="content">
+    <h1>ProDesign Group</h1>
+    <p>You are in the right place.</p>
+  </div>
+
+  <div class="card-row">
+    <div class="hover-card">
+      <img src="Dots.png" alt="Interior Design">
+      <div class="overlay">
+        <h3>Exterior & Interior Design</h3>
+        <p>Following all Codes and Standards</p>
+      </div>
+    </div>
+
+    <div class="hover-card">
+      <img src="rend.png" alt="Commercial">
+      <div class="overlay">
+        <h3>Renderings</h3>
+        <p>2D and 3D visualizations</p>
+      </div>
+    </div>
+
+    <div class="hover-card">
+      <img src="Mep.png" alt="Interior">
+      <div class="overlay">
+        <h3>MEP</h3>
+        <p>Mechanical Electrical Plumbing</p>
+      </div>
+    </div>
+
+    <div class="hover-card">
+      <img src="graph.png" alt="Landscape">
+      <div class="overlay">
+        <h3>Anything!</h3>
+        <p>All Your Design Needs</p>
+      </div>
+    </div>
+  </div>
+
+  <button onclick="location.href='contact.html'">Contact Us</button>
+
+  <p id="text">… you’ll be glad you did. </p>
+
+  <div class="slider">
+    <div class="slide-track">
+      <img src="Mep.png" alt="pic1" class="slide-image">
+      <img src="rend.png" alt="pic2" class="slide-image">
+      <img src="graph.png" alt="pic3" class="slide-image">
+      <!-- Repeat images for smooth infinite scroll -->
+      <img src="Mep.png" alt="pic1" class="slide-image">
+      <img src="rend.png" alt="pic2" class="slide-image">
+      <img src="graph.png" alt="pic3" class="slide-image">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+<section class="expertise-section">
+  <h2>Our Expertise</h2>
+  <div class="expertise-grid">
+    <div class="expertise-item" data-text="Arch & MEP">
+      <img src="R.png" alt="Design Icon" />
+    </div>
+    <div class="expertise-item" data-text="Your way!">
+      <img src="S.png" alt="Architecture Icon" />
+    </div>
+    <div class="expertise-item" data-text="proficient">
+      <img src="A.png" alt="Planning Icon" />
+    </div>
+    <div class="expertise-item" data-text="Renderings">
+      <img src="3ds max.png" alt="Consulting Icon" />
+    </div>
+    <div class="expertise-item" data-text="Creative approach">
+      <img src="PS.png" alt="Engineering Icon" />
+    </div>
+    <div class="expertise-item" data-text="Design from Scratch">
+      <img src="Ai.png" alt="Project Management Icon" />
+    </div>
+    <div class="expertise-item" data-text="Interior Architectural Designs">
+      <img src="Inter.png" alt="Interior Architectural Designs" />
+    </div>
+    <div class="expertise-item" data-text="Creative Design">
+      <img src="CD.png" alt="Creative Design" />
+    </div>
+    <div class="expertise-item" data-text="You Save Moneey!">
+      <img src="YSM.png" alt="Support Icon" />
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="contact-section">
+  <h2>Contact Us</h2>
+  <form
+    class="contact-form"
+    action="https://formspree.io/f/mojnwgvw"
+    method="POST"
+  >
+    <div class="form-row">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+    </div>
+    <div class="form-row">
+      <input type="tel" name="phone" placeholder="Phone Number" />
+      <input type="text" name="company" placeholder="Company Name" />
+    </div>
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+
+    <!-- This must be INSIDE the form -->
+    <input type="hidden" name="_redirect" value="thankyou.html">
+
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+
+<footer class="footer">
+  <div class="container footer-content">
+    <div class="footer-left">
+      <img src="PDGt.png.png" alt="Logo" class="footer-logo" />
+      <p>© 2026 ProDesign Group. All rights reserved.</p>
+    </div>
+    <div class="footer-center">
+      <h4>Contact Us</h4>
+      <p>Email: main.prodesigngroup@gmail.com</p>
+      <p>Phone: +1 (925) 446-9604</p>
+    </div>
+  
+  </div>
+</footer>
