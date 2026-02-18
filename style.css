@@ -82,14 +82,14 @@ body {
   transition: color 0.3s ease;
 }
 
-.menu a::after {/*Underline for menu*/
+.menu a::after {/*Underline for*/
   content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   height: 3px;
   width: 0;
-  background: #003057; /* California blue */
+  background: #003057; /* California Gold */
   border-radius: 4px;
   transition: width 0.3s ease;
 }
@@ -281,9 +281,9 @@ button:hover {
 .slide-image {
   height: 380px;
   max-width: 100%;
-  margin: 0 16px;
+  margin: 0 10px;
   vertical-align: middle;
-  border-radius: 10px;
+  border-radius: 9px;
   display: inline-block;
   object-fit: cover;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -303,17 +303,17 @@ button:hover {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 24px;
-  margin: 70px 0;
+  gap: 14px;
+  margin: 40px 0;
 }
 
 /* Cards */
 .hover-card {
-  width: 180px;
+  width: 150px;
   height: 420px;
   position: relative;
   overflow: hidden;
-  border-radius: 18px;
+  border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
   background-color: #fff;
@@ -324,7 +324,7 @@ button:hover {
   height: 100%;
   object-fit: cover;
   display: block;
-  border-radius: 18px;
+  border-radius: 9px;
 }
 
 .overlay {
@@ -332,14 +332,15 @@ button:hover {
   inset: 0;
   background: rgba(0, 48, 87, 0.6); /* Berkeley Blue with transparency */
   color: white;
-  padding: 24px;
+  padding: 20px;
+  font-size: 20px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   opacity: 0;
   transform: translateY(24px);
   transition: opacity 0.5s, transform 0.5s;
-  border-radius: 18px;
+  border-radius: 9px;
 }
 
 .hover-card:hover .overlay {
